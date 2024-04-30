@@ -1,0 +1,122 @@
+:root {
+    --btn-color: #3882f6;
+    --test: 1px solid red;
+    --hero-footer-color: #1f2937;
+    --hero-main-txtcolor: #f9faf8;
+    --secondary-link-color: #e5e7eb;
+    --quote-txtcolor: #1f2937;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: var(--test); */
+
+}
+body {
+    font-family: sans-serif
+}
+.hero {
+    background-color: var(--hero-footer-color);
+    height: 50vh;
+}
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header h1 {
+    color: #f9faf8;
+    font-size: 24px;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li {
+    list-style-type: none;
+}
+ul li:not(:last-child) {
+    list-style-type: none;
+    margin-right: 20px;
+}
+ul li a {
+    color: var(--secondary-link-color);
+    text-decoration: none;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+/* Header Content */
+.header-content {
+    /* border: var(--test); */
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    column-gap: 30px;
+}
+.main-content {
+    /* border: var(--test); */
+    color: var(--hero-main-txtcolor);
+    max-width: 50%;
+}
+.main-content h1 {
+    font-size: 48px;;
+}
+.main-content p{
+    font-size: 18px;
+    color: #e5e7ebd0;
+    padding: 5px 0;
+}
+.btn-sign-up {
+    background-color: var(--btn-color);
+    padding: 5px;
+    color: var(--hero-main-txtcolor);
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.img-main {
+    /* border: var(--test); */
+    width: 50%;
+    overflow: hidden;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.img-section {
+    background-color: var(--hero-main-txtcolor);
+    height: 50vh;
+}
+.img-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.img-section h1{
+    color: var(--hero-footer-color);
+    text-align: center;
+    padding: 50px;
+}
+.cards{
+    margin: 0 20px;
+    display: flex;
+    column-gap: 20px;
+}
+.card-holder {
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.card-img {
+    width: 100%;
+    height: 200px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
