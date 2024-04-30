@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --btn-color: #3882f6;
     --test: 1px solid red;
@@ -14,7 +16,8 @@
 
 }
 body {
-    font-family: sans-serif
+    font-family: "Roboto", sans-serif;
+    /* line-height: 1.5; */
 }
 .hero {
     background-color: var(--hero-footer-color);
@@ -95,7 +98,7 @@ ul li a:hover {
     height: 50vh;
 }
 .img-container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .img-section h1{
@@ -119,4 +122,71 @@ ul li a:hover {
     background-color: #3882f6;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.quote-section {
+    background-color: var(--secondary-link-color);
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote {
+    max-width: 900px;
+    padding: 20px;
+}
+.quote p {
+    text-align: justify;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+.quote .author{
+    font-style: normal;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.cta-section {
+    background-color: var(--hero-main-txtcolor);
+    height: 35vh;
+    position: relative;
+}
+.cta-card {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    padding: 30px 50px;
+    background-color: var(--btn-color);
+    color: var(--hero-main-txtcolor);
+    border-radius: 5px;
+}
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
+.btn-cta {
+    border: 2px solid var(--hero-main-txtcolor);
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    color: var(--hero-main-txtcolor);
+    cursor: pointer;
+}
+.btn-cta:hover {
+    background-color: #3272d8;
+}
+.footer {
+    background-color: var(--hero-footer-color);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hero-main-txtcolor);
 }
